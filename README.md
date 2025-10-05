@@ -11,6 +11,7 @@ A command-line tool for managing common tasks in Ethereum 2.
   - [Binaries](#binaries)
   - [Docker](#docker)
   - [Source](#source)
+- [Deployment](#deployment)
 - [Setting up](#setting-up)
 - [Usage](#usage)
 - [Maintainers](#maintainers)
@@ -61,6 +62,10 @@ docker run --network=host ethdo chain status
 ```
 
 Alternatively, if the beacon node is running in a separate docker container a shared network can be created with `docker network create eth2` and accessed by adding `--network=eth2` added to both the beacon node and `ethdo` containers.
+
+## Deployment
+
+For comprehensive deployment instructions including production configurations, Docker Compose examples, systemd services, security best practices, and monitoring, see the [Deployment Guide](docs/deployment.md).
 
 ## Setting up
 
